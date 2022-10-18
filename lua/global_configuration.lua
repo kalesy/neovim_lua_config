@@ -1,9 +1,8 @@
 -- utf8
 vim.g.encoding = "UTF-8"
 vim.o.fileencoding = 'utf-8'
--- 使用相对行号
+-- 使用行号
 vim.wo.number = true
-vim.wo.relativenumber = false
 -- 高亮所在行
 vim.wo.cursorline = true
 -- 显示左侧图标指示列
@@ -16,9 +15,6 @@ vim.o.shiftround = true
 -- >> << 时移动长度
 vim.o.shiftwidth = 4
 vim.bo.shiftwidth = 4
--- 空格替代tab
-vim.o.expandtab = true
-vim.bo.expandtab = true
 -- 新行对齐当前行
 vim.o.autoindent = true
 vim.bo.autoindent = true
@@ -28,7 +24,7 @@ vim.o.ignorecase = true
 vim.o.smartcase = true
 -- 边输入边搜索
 vim.o.incsearch = true
--- 命令行高为2，提供足够的显示空间
+-- 命令行高修改
 vim.o.cmdheight = 1
 -- 当文件被外部程序修改时，自动加载
 vim.o.autoread = true
@@ -47,9 +43,6 @@ vim.o.swapfile = false
 vim.o.updatetime = 300
 -- 设置 timeoutlen 为等待键盘快捷键连击时间500毫秒，可根据需要设置
 vim.o.timeoutlen = 800
--- split window 从下边和右边出现
-vim.o.splitbelow = true
-vim.o.splitright = true
 -- 自动补全不自动选中
 vim.g.completeopt = "menu,menuone,noselect,noinsert"
 -- 样式
